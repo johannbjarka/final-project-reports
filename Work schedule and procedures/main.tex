@@ -1,4 +1,4 @@
-\title{Final Project work schedule and procedures}
+
 \documentclass[11pt]{article}
 
 %%
@@ -14,157 +14,27 @@
 \usepackage{courier}
 \usepackage{amsthm} % for theoremsyles
 \usepackage{float}
-\usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{color, colortbl}
-\usepackage{pdflscape}
-\usepackage{pbox}
 \usepackage{tabularx}
-\usepackage{makecell}
-\usepackage{verbatim}
-\usepackage{enumerate}
-\usepackage{listings}
 \usepackage{hyperref}
-\usepackage{tikz}
-\usepackage{tikz-qtree}
 \usepackage{verbatimbox}
 \definecolor{LightSteelBlue}{rgb}{0.69,0.77,0.9}
-\definecolor{Mint}{RGB}{198,230,162}
-\definecolor{mygray}{gray}{0.6}
-\definecolor{javared}{rgb}{0.6,0,0} % for strings
-\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
-\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
-\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
- 
-\lstset{language=Java,
-basicstyle=\ttfamily,
-keywordstyle=\color{javapurple}\bfseries,
-stringstyle=\color{javared},
-commentstyle=\color{javagreen},
-morecomment=[s][\color{javadocblue}]{/**}{*/},
-numbers=left,
-numberstyle=\tiny\color{black},
-stepnumber=2,
-numbersep=10pt,
-tabsize=4,
-showspaces=false,
-showstringspaces=false}
 
-%%
-%% setup
-%%
-
-\geometry{a4paper, bottom = 4cm}
-
-
-\makeatletter
-\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
-            {-2.5ex\@plus -1ex \@minus -.25ex}%
-            {1.25ex \@plus .25ex}%
-            {\normalfont\normalsize\bfseries}}
-\makeatother
-\setcounter{secnumdepth}{5} % how many sectioning levels to assign numbers to
-\setcounter{tocdepth}{5}    % how many sectioning levels to show in ToC
 %%
 %% beginning of document
 %%
+\author{Hjalti Leifsson (hjaltil13@ru.is)\\Jóhann Örn Bjarkason (johannob01@ru.is)}
+\title{\textbf{Project Discovery - work process and schedule}}
 
 \begin{document}
 
-\input{titlepage}
+\maketitle
 
-\date{\today}
-
-\clearpage
-
-\section*{Introduction}
-In this report we will illustrate how the work on the final project for CCP/MMOS/CADIA (Project Discovery), will take place. We will show the work schedule that the team will follow during this term, and the tools we will use for the projects implementation. We will also discuss which software development methodology the team will adhere to, and the facilities we have at our disposal for the duration of the project. 
-
-This report will also work as a contract for the team, both members agree to the contents of this report, and will follow the requirements within.
-
-\section*{Work Schedule}
-Our work schedule will be split into two different phases. The first is during the 12 week semester from August 17 to November 11. Our schedule during that period is influenced by classes and course work in other courses. During the 3 week semester from November 26 to December 16 this project will be our only concern so we will be dedicating most of our time to it. 
-
-\subsection*{Schedule for the 12 week semester}
-  \addvbuffer[12pt 12pt]{\begin{tabular} {| r | c | c | c | c | c | c | c |}
-    \rowcolor{LightSteelBlue}
-    \hline  & Mon & Tue & Wed & Thu & Fri & Sat & Sun\\ 
-    \hline Hjalti & 16:00-18:00 & 16:00-18:00 & - & 12:00-15:30 & 10:00-14:00 & -  & - \\
-    \hline  & - & - & - & - & 16:00-18:00 & - & - \\
-    \hline Total & 2:00 & 2:00 & - & 3:30 & 6:00 & - & - \\
-    \rowcolor{LightSteelBlue}
-    \hline  &  Mon & Tue & Wed & Thu & Fri & Sat & Sun\\ 
-    \hline Jóhann & 16:00-18:00 & 16:00-18:00 & - & 9:30-15:30 & 10:00-14:00 & -  & - \\
-    \hline  & - & - & - & - & 16:00-18:00 & - & - \\
-    \hline Total & 2:00 & 2:00 & - & 6:00 & 6:00 & - & - \\
-    \hline
-  \end{tabular}}
-  
-  \noindent
-  \addvbuffer[12pt 12pt]{\begin{tabular} {| r |  c | c |}
-  \hline & Hjalti & Jóhann\\
-  \hline Total hours per week & 13:30 & 16:00 \\
-  \hline Total hours for the semester & 162 & 192 \\ 
-  \hline
-	
-  \end{tabular}}
-  
-  \noindent The difference in hours spent on the project during this phase can be explained by a more favorable schedule in other courses for Jóhann and he will also need more time to get familiar with the project since he only started working on it at the start of the semester while Hjalti joined the project in July.   
-  
-\subsection*{Schedule for the 3 week semester}
-  \addvbuffer[12pt 12pt]{\begin{tabular} {| r | c | c | c | c | c | c | c |}
-    \rowcolor{LightSteelBlue}
-    \hline  & Mon & Tue & Wed & Thu & Fri & Sat & Sun\\ 
-    \hline Hjalti & 9:00-17:00 & 9:00-17:00 & 9:00-17:00 & 9:00-17:00 & 9:00-17:00 & 10:00-15:00  & 10:00-15:00 \\
-    \hline Total & 8:00 & 8:00 & 8:00 & 8:00 & 8:00 & 5:00 & 5:00 \\
-    \rowcolor{LightSteelBlue}
-    \hline  &  Mon & Tue & Wed & Thu & Fri & Sat & Sun\\ 
-    \hline Jóhann & 9:00-17:00 & 9:00-17:00 & 9:00-17:00 & 9:00-17:00 & 9:00-17:00 & 10:00-15:00  & 10:00-15:00 \\
-    \hline Total & 8:00 & 8:00 & 8:00 & 8:00 & 8:00 & 5:00 & 5:00\\
-    \hline
-  \end{tabular}}
-  
-  \noindent
-  \addvbuffer[12pt 12pt]{\begin{tabular} {| r |  c | c |}
-  \hline & Hjalti &  Jóhann\\
-  \hline Total hours per week & 50 & 50 \\
-  \hline Total hours for the semester & 150 & 150 \\ 
-  \hline Total hours for the project & 312 & 342 \\ 
-  \hline
-  \end{tabular}}
-  
-\section*{Methodology}
-For this project we will be utilizing the Scrum methodology to help us document and organize the project and its progress. The appointed Scrum Master is Jóhann, the Product Owner that represents the team is Hjalti and the product owner on behalf of CCP will be Pétur Örn Þórarinsson who will also be our Project Manager. Since the team only consists of two people, the Scrum Master and Product Owner are the whole team. The project will consist of eight, two week long sprints, with the work divided so that the team can direct enough attention at their school studies and tests, as well as work on the project.
-
-Daily Scrum meetings will be held at CCP headquarters every day, at a time the team sees fit. We chose Scrum because it, if followed correctly, gives us good documentation on the team's progress and should give us an indication of what we can achieve according to our velocity. With each iteration we can track what is going well and what needs improving. Scrum gives us the platform to review and improve on our process during each iteration.
-
-\section*{Reports}
-The team intends on handing in the items in this list:
-\begin{itemize}
-  \item A project description report
-  \item A work schedule and procedure report
-  \item A risk analysis report
-  \item A progress report
-  \item A final project report
-\end{itemize}
-
-\noindent This list can expand, and change as the project goes on.
-
-\section*{Tools and facilities}
-
-\subsection*{Facilities}
-All of the work on the project will take place at CCP headquarters at Grandagarður 8. Both team members have been assigned work stations close to each other for the duration of the project. The work stations include all the tools needed to complete the project. 
-
-\subsection*{Tools for the game itself}
-We will be using Perforce for Version control. The reason for that is simple, it's the version control system used at CCP. The programming language we will use is Python, again because that's what CCP use to code EVE Online. The integrated development environment (IDE) we intend to use is PyCharm, it integrates very well with Perforce and is widely used at CCP. For code reviews we will use Code Collaborator which is also used at CCP.
-
-\subsection*{Tools for the website}
-We will use Perforce for version control for the website as well as the game. The website will be done in HTML5 as we want it to have a modern look and functionality. For all the scripting purposes of the site we will use Javascript as it has universal browser support and we have the most experience using it. We will be using the React Javascript library to build the user interface. It will limit rendering of objects as it only renders objects that change and it will allow us to have reusable components which will simplify the process. To help us keep the Javascript code quality in check we will be using JSHint. For styling the website we will use Less, which will allow us to have shorter and cleaner code. The IDE we are going to use for all the aforementioned languages is Sublime Text, we both have experience using it and feel comfortable with it. 
-
-We will use Bower to keep track of packages and dependencies for the website. For unit testing we will use Jasmine as our test framework and Karma as our test runner. We will use Grunt as our task runner to run various tasks such as JSHint checking, running unit tests, minifying and concatenating the code, each time we change the code.
-
-\subsection*{Other tools}
-
-All of the reports related to the project will be done using \LaTeX. We will be using Toggl to keep track of the total time spent on the project and on individual tasks. To keep track of our Scrum progress, we will be using Jira, which is used within CCP for that purpose.
+\input{sections/introduction}
+\input{sections/schedule.tex}
+\input{sections/methodology.tex}
+\input{sections/reports.tex}
+\input{sections/tools.tex}
 
 \end{document}
