@@ -1,0 +1,54 @@
+Beinagrind
+
+0. Abstract (Mention CADIA)
+
+1. Introduction
+	- stating the problem
+	- protein analysis with respect to diseases
+	- what else has been done? (specifically to this problem, protein analysis)
+	+ solution
+	+ user test - result
+	+ roadmap
+
+2. Background
+	- GWAP
+	- Previous work. (eignarhald. Gera skýrt hvað við gerðum ekki)
+	- CCP - EVE Online
+	- MMOS - human protein atlas
+
+3. Project Discovery
+	- Introduction
+	- Network samskipti (Þessi client talar út fyrir þennan client og svo framvegis)
+	- Architecture
+	- Client-within-a-client (Erum að búa til client inní client, hversu flókið var að koma þessu inn í eve)
+	- Game logic (user map, labba í gegnum spil)
+	- Science behind?
+	- The website
+
+4. User evaluation
+	- Taka texta úr user test skýrslunni
+	- Niðurstaða
+
+5. Work Schedule, work flow (High level, ekki scrum burndown kjaftæði, stóðst skipulagið eða ekki)
+	- Upphaflegt skipulag
+	- Sýna framvindu (kannski project burndown, samantekt yfir sprettina)
+	- Niðurstaða (stóðst skipulagið eða ekki )
+		+ Niðurlag (Hvernig okkur fannst að vinna verkefnið)
+
+6. Future Work
+	- Hægt að nota clientinn til að leysa önnur verkefni en protein myndir
+	- 
+
+7. Conclusion
+	- Tell the player what he just read (inverse roadmap, grípa gæjann sem fór aftast án þess að lesa neitt)
+	- Niðurstaða út frá leiknum ( cpp ætlar að koma leiknum út)
+		- MONT
+			-Media
+			-Vegas
+			-Umjöllun (nature)
+			-Háskólablaðið
+	- Niðurstaða út frá okkur varðandi verkefnið (hvað gekk vel, hvað gekk illa, hvað myndum við gera öðruvísi, afsökunarstaðurinn okkar, erfitt en lærdómsríkt)
+	- Þakkarorð (þakka ccp, mmos, david og fleira)
+
+
+Cover letter frá Pétri og Attila
