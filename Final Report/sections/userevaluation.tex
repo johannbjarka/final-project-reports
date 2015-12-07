@@ -1,6 +1,6 @@
 \section{User evaluation}\label{sec:userevaluation}
 
-As a team we were advised by our project manager to perform preliminary, in-house user tests before the Project Discovery game would be showcased at EVE Vegas, a conference for EVE Online players and fans. The purpose of this test was to shed light on any obvious errors with the game, especially the tutorial phase which was at an early stage.
+As a team we were advised by our project manager to perform a preliminary, in-house user test before the Project Discovery game would be showcased at EVE Vegas, a conference for EVE Online players and fans. The purpose of this test was to shed light on any obvious errors with the game, especially the tutorial phase which was at an early stage at the time.
 
 \subsection{Implemention}
 The tests took place on the 9th of October. We got five volunteers from CCP, four males and one female between the ages of 25 to 40. The people were a mix of game designers, quality assurance people and a community developer. The reason we only got people from within CCP to partake in the tests was that the game was not ready to be revealed to the public so we could not get people outside of CCP to perform the test.
@@ -9,7 +9,7 @@ The test was performed on a computer that remotely connected to our personal wor
 
 After the tester had finished playing we asked them questions about their experience playing the game and then thanked them for their contribution to the project.
 
-\subsubsection{Data}
+\subsection{Data}
 
 In this section we outline the data received from each of the testers, this data is comprised of a list of questions we asked the testers after the test was performed, and their answers.
 
@@ -106,17 +106,24 @@ Tester 5 & A zoom function would have been great, and simpler tutorial tooltips.
 
 \subsection{Results}
 
-In this section we analyze the data derived from the tests and how we used that data to come up with improvements for the game.
+In this section we analyze the data we derived from the tests and how we used that data to come up with improvements for the game.
 
 \subsubsection{Tooltips}
-Proper use of tooltips is paramount to the players understanding, players seemed to be confused about their role in the game. We need tooltips to be clear and helpful to players understanding the interface. To this end, tooltips should be utilized not only at the first opening of the interface, but also throughout the whole tutorial \& training session, gradually teaching players about the game as they face the actual problems. The tooltips also need to be shorter and should always focus on one specific message. Testers did not immediately grasp that they could change the colour filter on the main image, we need to add a tooltip that describes this functionality. All in all the tooltips were not descriptive enough, and testers felt that there were not enough of them.
+We gathered that proper use of tooltips was paramount to the players understanding of the game. Some players seemed to be confused about the objectives of the game. We saw that the tooltips needed to be clear and helpful to the players understanding the interface. So we decided that tooltips should be utilized when the players first see the interface, and also throughout the whole tutorial and training session, gradually teaching players about the game as they face the actual problems. The tooltips also needed to be shorter and focused on one specific message. Testers did not immediately grasp that they could change the colour filter on the main image, so we added a tooltip that describes this functionality.
 
 \subsubsection{Tutorial}
-Testers felt that the tutorial was too easy and did not teach them very much about the real game. To rectify this, we are planning to implement a more extensive tutorial, where each image teaches the player a specific attribute of the game. Whether that lesson is about the interface, or how to classify certain patterns in images. 
+Testers felt that the tutorial was too easy and did not teach them very much about the real game. To rectify this we implemented a more extensive tutorial, where each task teaches the player a specific aspect of the game. Such as explaining the interface, or how to classify certain patterns in images. 
 
-Testers expressed the need for an explanation after each tutorial task, so we will contact the Human Protein Atlas about getting explanations for each training task, to explain why the correct solution was correct.
+Testers expressed the need for an explanation after each tutorial task, so we reached out to the researchers at The Human Protein Atlas to get explanations for each training task, and to explain why the correct solution was correct. We also enlisted their help in making the tutorial more focused and better at teaching players the skills needed to classify images.
 
 \subsubsection{Interface}
-Testers did not have much to say about the interface except that they would have liked to have a zoom option on the main image, and to rectify this, we are going to implement a magnification feature on the main image.
+Testers did not have much to say about the interface with the exception of everyone being in agreement that a magnificitation function was necessary on the main image. We responded to that by implementing a magnification function that allows players to zoom in to the full resolution of the main image within the image container and it gives players the option to fix the position of the zoomed in image so they can easily compare to the image to the categories available.
 
-We observed testers, who had completed the training phase, and were contributing to unknown tasks, did not get a result screen. That is normal behaviour since the solution is unknown, we can not reliably give a result. We saw that when users weren't getting instant feedback they were not as interested and seemed less motivated to find the right solution to the tasks. Our solution to this problem was that since we do know the community consensus for specific tasks at any given time, we can show exact percentages for choices by other players. We felt that since testers expressed excitement in seeing a result screen, we should implement this for unknown tasks, so that the game would not lose the factor of excitement once players reach the stage of solving images that have no known solution. This could be a major improvement in the enjoyment players experience while playing the game.
+We observed that testers, who had completed the training phase, and were contributing to unknown tasks, did not get a result screen. That is normal behaviour since the solution is unknown, we can not reliably give a result. We saw that when users weren't getting instant feedback they were not as interested and seemed less motivated to find the right solution to the tasks. Our solution to this problem was that since we do know the community consensus for specific tasks at any given time, we can show exact percentages for choices by other players. We felt that since testers expressed excitement in seeing a result screen, we should implement this for unknown tasks, so that the game would not lose the factor of excitement once players reach the stage of solving images that have no known solution. To achieve this, instead of giving players a confirmed correct answer like we do with training tasks, we give players the current consensus of the task at the time the user submitted his solution. We also make sure to let players know that this consensus is not necessarily correct. That way the player can get a sense of what other players think the solution is and see if he's in agreement with them or not.
+
+\begin{figure}[H]
+	\centering
+	\graphicspath{ {./graphics/} }
+    \centerline{\includegraphics[scale=0.55]{unknow_result.png}}
+    \caption{\label{fig:bdchart}A mockup of the consensus screen for unknown tasks}
+\end{figure}
