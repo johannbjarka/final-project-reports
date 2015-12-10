@@ -1,14 +1,18 @@
 \section{Project Discovery}\label{sec:projectdiscovery}
 
+In this section we discuss the game itself. We explain how it communicates with MMOS' API, the code architecture of the game client and how it fits into the EVE Online client. We also go over how the gameplay works and lastly consider the website we built to go along with the game's launch.
+
 \subsection{Network Communications}
 
+RESTful API, köllum á hann, hann skilar til baka taski sem inniheldur url á 4 myndir (mism. colors) (bara virkt í smátíma), myndin loadast í client. Leikmaður leysir taskið, submittar lausn. Þá köllum við á API-inn, sendum lausn spilarans, fáum til baka annað hvort result eða community consensus og rewards. Bæta við hvernig unknown task er höndlað þegar lausnin er klár.
+
 \subsection{Architecture}
+
+Skrifað í stackless python, notast við UI library CCP, nefna klasana sem tilheyra leiknum, server kóðann
 
 \subsection{Client within a client}
 
 \subsection{Game logic}
-
-\subsection{The science behind the game}
 
 \subsection{The website}
 One of the goals of the project was to launch a Project Discovery website along with the release of the game. The website serves as an information hub for the project. Interested parties can get information about the game, the science behind the game and our partners, MMOS and the Human Protein Atlas. The website also displays videos related to the game and screenshots of the game in action. To build the website we used HTML5, Less and JavaScript. We were provided with a template from web developers within CCP which helped us make the website look professional and consistent with other EVE Online websites.
