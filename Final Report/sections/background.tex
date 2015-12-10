@@ -1,62 +1,70 @@
 \section{Background}\label{sec:background}
-	In this section we discuss what a game with a purpose is, and why our project falls within that category.
-	Next we outline the previous work already committed to the project by previous students.
-	We discuss MMOS (Massively Multiplayer Online Science), CCP Games, The Human Protein Atlas, and what they have done for the project. And finally we show how this project helped solve real world problems in the biological sciences.
+	In this section we discuss what a game with a purpose is, and why our project falls within that category. Next, we name the affiliates to this project, and what they have done for the project; The Human Protein Atlas, MMOS (Massively Multiplayer Online Science) and CCP Games. Finally, we outline the previous work already committed to the project by previous students.
 
 \subsection{Game with a purpose}
-	In the modern world it is one of the facts of life that people play video games, either competitively or casually, and the hours humans spend each year on video games is in the billions. What if we could channel some of that time and energy into something really useful?
+	In the modern world it is one of the facts of life that people play video games, either competitively or casually, and the hours humans spend each year on video games is in the billions. If we could channel some of that time and energy into something really useful, we could do some amazing things.
 
-	Many scientific research problems require the analysis of huge amounts of data. Scientists are literally sitting on mountains of data that can not conceivably be processed in their lifetime. One might think we could use computers to solve these problems, but despite colossal advances in computers over the last 50 years, and machine learning recent years, these algorithms often fail to provide good enough quality for scientific research.
+	Many scientific research problems require the analysis or classification of huge amounts of data, scientists are literally sitting on mountains of scientific data that they can not conceivably process themselves in their lifetime. One might think we could use computers to solve such problems for us automatically, but despite colossal advances over the last 50 years, computers still don't posess many skills and capabilities that most humans take for granted, such as perceiving an image and discern its patterns.
 
-	Because humans possess complex conceptual intelligence, perceptual capabilities and pattern recognition that algorithms can not yet mimic; computers can not be used to solve these problems for us. If we could use a large number of ordinary humans as processors in a distributed computer-like system, we could solve real world large scale problems that would otherwise be considered impossible or too time consuming.
+	Because humans possess complex conceptual intelligence, perceptual capabilities and pattern recognition that modern algorithms and machine learning can not yet mimic; computers can not be used to solve these problems for us; human interaction is needed. If we could use a large number of ordinary humans as processors in a distributed computer-like system, we could solve real world large scale problems that would otherwise be considered impossible or too time consuming.
 
-	Seeing how popular video games are, what if we designed a game, whose purpose is outsourcing computationally difficult functions to humans in an entertaining way? These \emph{games with a purpose} are ways for regular people outside the scientific community to contribute to scientific research in various fields, and entertaining themselves in the meantime.
+	Seeing how popular video games are, what if we designed a game whose purpose is outsourcing computationally difficult functions to humans in an entertaining way? These \emph{games with a purpose} are an implementation of citizen science and ways for regular people outside the scientific community to contribute to scientific research in various fields, and entertaining themselves in the meantime.
 
-	This concept has already been proven useful before in games such as \emph{FoldIt}, where players compete to find the lowest energy state of a protein, thus helping research in the prediction of protein structures, and \emph{Galaxy Zoo}, where players help each other classifying astral bodies in order to find out how galaxies are formed.
+	This concept of using games for citizen science has already been proven useful before in games such as \emph{FoldIt}, where players compete to find the lowest energy state of a protein, thus helping research in the prediction of protein structures, and \emph{Galaxy Zoo}, where players help each other classifying astral bodies in order to find out how galaxies are formed.
+
+	The goal of this project is creating such a game with a purpose, utilizing citizen science, where ordinary people can play the game for fun and solve real world scientific problems in the meantime.
 
 	% TODO: Insert references to https://www.cs.cmu.edu/~biglou/ieee-gwap.pdf
 
-\subsection{Previous work}
-	The project was a continuation of work done by Reykjavík University graduates Gunnar Þór Stefánsson and Þór Adam Rúnarsson. They worked on it as their final project for the spring semester of 2015, this section outlines what work they did on the project. 
+\subsection{Human Protein Atlas}
+	In this section, we discuss the scientific problem this project aims to solve, and what scientific project presented the problem.\\
 
-	Gunnar Þór Stefánsson and Þór Adam Rúnarsson continued their work with a grant from Rannís during the summer of 2015. Gunnar Þór Stefánsson left the project in the beginning of July and Hjalti Leifsson replaced him. The work continued until Þór Adam Rúnarsson left the project and Jóhann Bjarkason joined in the end of August, where this final project began.
+	The Human Protein Atlas, or the HPA is a scientific project based in Sweden, and is funded by the Knut and Wallenberg foundation in order to allow for a systematic exploration of the human proteome using antibody-based proteomics. The HPA contains information for a large majority of all human protein-coding genes regarding the expression and localization of the corresponding proteins based on both RNA and protein data.
 
-	When we started the project, the interface had the hexagonal category selection and the header and footer elements. The game already had a few features implemented, such as players being able to receive images, selecting their appropriate categories and submitting their classifications.
-	A simple rewarding system was already in place, rewarding players with in game currency (ISK), experience points (XP) and loyalty points (LP) when players submitted a solution. The reward was based on their score for the image they just classified, but since those images were \emph{training images} (i.e. Images that experts have already solved), we already knew the solution and could grade the player on that. However, that needed to be changed later on because when the client got an image that we did not know the solution for, no reward was given.
-	Finally, a rudimentary tooltip based tutorial phase was implemented, which only explained the interface to the user, but nothing about how to actually play the game effectively.
+	The HPA consists of four subparts; normal tissue, cancer, subcellular and cell lines with each subpart containing images and data based on antibody-based proteomics and transcriptomics.
 
-\subsection{CCP and EVE Online}
-	CCP Games is the company that owns the MMORPG EVE Online, which is home to over 7,000 star systems and hundreds of thousands of players. They hosted us while working on integrating this project into EVE Online and provided a spot in a team called \emph{Team Space Glitter}, where we could ask for programming and design advice, which was very well received.
+	This project aims to classify the images in one subpart of the atlas; the subcellular atlas, which contains around five hundred thousand, high resolution, multicolor images of immunofluorescently stained cells that reveal spatial expression patterns at the subcellular level. Around half of those images have already been classified by scientists at the HPA the past few years, and by way of citizen science, we can classify the rest of these images much faster, freeing up the time of these scientists.
 
-	EVE Online was perfect for this kind of project, because it's players are used to pretty technical and difficult challenges already in the game. The images we selected also fit the space theme of the game.
+	If this project succeeds, the HPA can provide a better database of images to scientists around the world. This can have drastic improvements in the fields of biological research, and really helps in understanding how diseases such as cancer operate, which in turn helps in the way of finding a cure.
 
 \subsection{MMOS}
 
-	Massively Multiplayer Online Science (MMOS) - the name of the concept, and the name of the Swiss company behind it – challenges the way that citizen science is	carried out today. MMOS doesn’t use gamification, but instead cooperates with major	computer game companies to access a resource that was unavailable to citizen science before: the billions of hours each week that people spend playing computer	games. In World of Warcraft alone, players collectively spent almost 6 million years playing by 2010!
+	Massively Multiplayer Online Science (MMOS), the name of the concept, and the name of the Swiss company behind it, challenges the way that citizen science is carried out today. MMOS doesn't use gamification, but instead cooperates with major computer game companies to access a resource that was unavailable to citizen science before: the billions of hours each week that people spend playing computer games.
 
-	While current approaches to using games for citizen science either create entire new games or ``gamify'' tasks for each specific research project (e.g., Play to Cure), MMOS seeks to leverage the enormous potential that already exists in major computer games. 
+	While current approaches to using games for citizen science either create entire new games or "gamify" tasks for each specific research project (e.g., Play to Cure), MMOS seeks to leverage the enormous potential that already exists in major computer games. 
 
 	By injecting research projects into existing, popular games as seamless parts of their gaming experiences (including mechanics, narrative, and visuals) we can benefit from the time that players spend on games. Even if we can only direct a small fraction of this time to scientific projects, we can deliver a powerhouse of human computation to scientific research.
 
 	This approach addresses the core challenges of citizen science for the following reasons:
 
 	\begin{itemize}
-	  \item {\bf Engagement:} There is a massive amount of user base already engaged, motivated to
-	  solve complex tasks.
-	  \item {\bf Motivation \& Retention:} As the solution is not a secret to the gamer, the intrinsic motivation of
-	  helping science is very important, but to keep up the long-term engagement,
-	  integrating it with in-game reward systems and other game mechanics is vital
-	  and adds an additional layer of motivation.
-	  \item {\bf Separation of Concerns:} Researchers do their research work
-	  (defining tasks, analysing results, communicating in research related issues)
-	  and professional game designers create the in-game experiences.
-	  \item {\bf Reliability:} Popular, massively-multiplayer games tend to last for many years, with some running for more than a decade
-	  with hundreds of thousands of devoted players.
+	  \item {\bf Engagement:} There is a massive amount of user base already engaged, motivated to solve complex tasks.
+	  \item {\bf Motivation \& Retention:} As the solution is not a secret to the gamer, the intrinsic motivation of helping science is very important, but to keep up the long-term engagement, integrating it with in-game reward systems and other game mechanics is vital and adds an additional layer of motivation.
+	  \item {\bf Separation of Concerns:} Researchers do their research work (defining tasks, analyzing results, communicating in research related issues) and professional game designers create the in-game experiences.
+	  \item {\bf Reliability:} Popular, massively multi-player games tend to last for many years, with some running for more than a decade with hundreds of thousands of devoted players.
 	\end{itemize}
 
 	We believe that this approach offers a win-win situation that benefits all parties: scientists, game players, and the gaming industry at large. 
 
-\subsection{Human Protein Atlas}
-	The Human Protein Atlas is a project based in Sweden funded by the Knut and Wallenberg foundation in order to allow for a systematic exploration of the human proteome using antibody-based proteomics. %\cite{http://www.proteinatlas.org/about/project}
+	% Cite the paper from david thue
 
-	This research project is sitting on millions of unclassified images of cells, subcells, cancer tissue and normal tissue. The classification of these images is vital in the understanding of diseases such as cancer, and also in the understanding of the role protein plays in cells.
+\subsection{CCP Games and EVE Online}
+	The way MMOS wanted to create a game with a purpose was dependent on a large game company providing the platform for a large amount of players to play our game. The company in question was CCP Games, they were willing to offer EVE Online, a game with an already large player base, to host this project. This section discusses CCP Games, EVE Online and their involvement in the project.\\
+
+	CCP Games is an Icelandic video game developer and publisher which is best known for producing EVE Online, the player-driven science fiction space-MMORPG which is home to over 7,000 star systems and hundreds of thousands of players. CCP showed enthusiasm about this project and was willing to see if the EVE Online community showed positive reactions to helping real world science while in a science fiction environment. If so, CCP was willing to host this game fully on the EVE Online live servers where the whole EVE universe would be able to participate in the project.\\
+
+	CCP Games allowed us access to two work stations within their headquarters in Reykjavík, and placed us in an EVE development team with senior EVE developers who were available to us when we needed help with the project. We were also allowed access to the cafeteria with complementary lunch, which allowed us to stay in house and focus on development.\\
+
+	EVE Online was a good fit for this project, since EVE is already a scientific game set in space, a scientific project like this would not feel out of context to players. Furthermore, EVE Online players are used to getting pretty technical and difficult tasks in game already, such as the hacking mini-game.
+
+	In order to entice EVE players to play our \emph{game with a purpose}, we offer EVE Online currency for each task solved, that way we are offering the players something that is already of value to them.
+
+	%Insert "The goal of this project is creating such a game within EVE Online, a huge game with a huge player base. We reward players with EVE currency, stimulates players to do more work, by using currency that are valuable to players is something other games were unable to do"
+
+\subsection{Previous work}
+	This project was a continuation of work done by Reykjavík University graduates Gunnar Þór Stefánsson and Þór Adam Rúnarsson. They worked on it as their final project for the spring semester of 2015, this section outlines what work they did on the project, and where we started. \\
+
+	They created a web prototype very quickly which allowed for basic functionality with a connection to an external API. This prototype was showcased at EVE Fanfest 2015 and was very well received by EVE Online players and CCP alike, which is why they decided to start integrating the prototype into the EVE Online client. They used their remaining time for the semester on integrating the client, and managed to create a crude version of the game before the semesters end.
+	However, they continued their work during the summer of 2015 with a grant from Rannís - The Icelandic Center for Research. In the beginning of July, Gunnar Þór Stefánsson left the project, and Hjalti Leifsson replaced him. The work continued until Þór Adam Rúnarsson left the project and Jóhann Bjarkason joined in the end of August, when Reykjavík University offered to continue the project as a Final Project. \\
+
+	When we started the project, the game itself was in a crude state. The interface had a hexagonal category selection and header and footer elements, the game itself was able to connect to the API using basic HTTP authentication, receive new tasks and submit classifications. A simple rewarding system was already in place, rewarding players with in game currency (ISK), experience points (XP) and loyalty points (LP) when players submitted a solution. That reward was based on how accurate the solution was, and displayed a rewarding screen. Finally, a rudimentary tool-tip based tutorial phase was implemented, which explained the interface to the user.
