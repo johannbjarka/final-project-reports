@@ -1,29 +1,22 @@
 \section{Project Discovery}\label{sec:projectdiscovery}
 
-	In this section we discuss the game itself. We explain how it communicates with MMOS' API, the code architecture of the game client and how it fits into the EVE Online client. We also go over how the gameplay works and lastly consider the website we built to go along with the game's launch.
-
-\subsection{Network Communications}
-	The Project Discovery client utilizes a connection with two different parts, the EVE server, and the MMOS RESTful API, which uses the Amazon CloudFront CDN and an Elastic Beanstalk container.
-
-	When a player opens up the client, it automatically contacts the EVE server, which connects to the MMOS API and asks for a new task for the player. The MMOS API then decides the new task and fetches it from the Elastic Beanstalk container, and sends it to the EVE server, which finally sends it to the EVE client. The task object includes a security pass that the client needs to access the URL's for each image that he needs for the task. Each time the client needs an image for that task, it contacts the EVE server, which contacts the MMOS API with the security pass, if that pass is still active, the Amazon CloudFront CDN returns a signed URL that leads to that image, the image itself is only accessible for a few seconds, as a security feature, so the client needs to cache the image in case the player needs to access it again.
-
-	The MMOS API authentication uses a HMAC-SHA256 method, based on Amazon authentication methods. The server has an API key and secret, which are changed at regular intervals. The API key and secret are used to generate a signing key, this adds an additional layer of security, since every message is hashed with different values.
-
-\subsection{Architecture}
-
-	%Skrifað í stackless python, notast við UI library CCP, nefna klasana sem tilheyra leiknum, server kóðann
-
-\subsection{Client within a client}
+	In this section we discuss the game itself and how its played. We explain how it communicates with MMOS' API, the code architecture of the game client and how it fits into the EVE Online client. We also go over the website we built to go along with the game's launch.
 
 \subsection{Gameplay}
-	The objective of the game is classify subcellular images correctly. A typical gameplay flow is as follows: The player opens up Project Discovery, an image is loaded and the player studies the image. To help the player do so we implemented a magnification function which allows the player to zoom in on the image by hovering over it with his mouse, this gives the player the full resolution of the image and enables him to examine its details very effectively.
+	The objective of the game is classify subcellular images correctly by observing the protein patterns of the images (which are stained green) and matching them to relevant categories. A typical gameplay flow is as follows: The player opens up Project Discovery, an image is loaded and the player studies the image. To help the player do so we implemented a magnification function which allows the player to zoom in on the image by hovering over it with his mouse, this gives the player the full resolution of the image and enables him to examine its details very effectively.
 
 	\begin{figure}[H]
 	  \centering
 	  \graphicspath{ {./graphics/} }
-	  \centerline{\includegraphics[scale=0.53]{zoom.png}}
-	  \caption{\label{fig:zoom}An image with its original resolution and a zoomed in version.}
-	\end{figure} 
+	  \centerline{\includegraphics[scale=0.45]{zoom.png}}
+	  \caption{\label{fig:zoom}An image with its original resolution and a zoomed in version. The mini-map in the bottom right corner of the zoomed in version shows the player the position of the zoom.}
+	\end{figure}
+
+	Below the image is a color channel filter which we implemented. It has four buttons which each gives a different version of the same image, with a different combination of red, green and blue although green is always present. Using the color channel filter can aid players in classifying images correctly as some patterns are more easily identified with certain filters.
+
+	The player then compares the image with the 27 categories that are available. The categories are divided into four super categories, three of which cover different parts of the cell and one is for unidentifiable patterns. That way players can quickly see which super category they should be comparing with the image. The categories are laid out in a hexagonal pattern and each of them can be viewed more closely by hovering over it. Once the player identifies a category he feels matches the image he can select it by clicking it. An image can match up to six different categories although most images match one to three categories. When the player is satisfied that he has selected all the relevant categories he submits his classification by clicking the submit button. What follows then depends upon which phase of the game the player is currently at, we will discuss those phases later.
+
+	Players get rewarded for submitting solutions to images   
 
 	\subsubsection{Tutorial}
 		When a player opens up Project Discovery for the first time he must start by going through a tutorial phase. We created the tutorial from scratch with the exception of some tooltip functionality which was already in place, although we refined it. The purpose of the tutorial phase is to allow the player to familiarize himself with the controls and the user interface of the game as well as teaching him the basics of analyzing subcellular images. To achieve this we first introduce the player to the controls by using tooltips which explain the functionality of each control element, one at a time, while also allowing the player to interact with the controls. 
@@ -57,9 +50,24 @@
 		\end{figure}
 
 	\subsubsection{Training tasks}
-		After finishing the tutorial the player receives rewards for doing so and is then moved on to the next phase of the game which we refer to as the training phase. This phase, like the tutorial, consists of seven stages but unlike the tutorial players must get the correct result in each stage to advance to the main part of the game. The stages also increase in difficulty and are in general more difficult than the tutorial images. The 
+		After finishing the tutorial the player receives rewards for doing so and is then moved on to the next phase of the game which we refer to as the training phase. This phase, like the tutorial, consists of seven stages containing images that have already been classified by scientists. However, unlike the tutorial, players must get the correct result in each stage to advance to the next phase of the game. The stages also increase in difficulty and are in general more difficult than the tutorial images. Players get the same result screen as in the tutorial so they can continue to learn and better understand how to correctly classify images. 
+
+		The purpose of this phase is to continue to teach players how to classify images and to make sure that only players that have the skills and/or will to solve images correctly can make it to the next phase and thereby contribute to classifying images that haven't already been classified by scientists. Since players get rewards for submitting solutions...
 
 	\subsubsection{Unknown tasks}
+
+\subsection{Network Communications}
+	The Project Discovery client utilizes a connection with two different parts, the EVE server, and the MMOS RESTful API, which uses the Amazon CloudFront CDN and an Elastic Beanstalk container.
+
+	When a player opens up the client, it automatically contacts the EVE server, which connects to the MMOS API and asks for a new task for the player. The MMOS API then decides the new task and fetches it from the Elastic Beanstalk container, and sends it to the EVE server, which finally sends it to the EVE client. The task object includes a security pass that the client needs to access the URL's for each image that he needs for the task. Each time the client needs an image for that task, it contacts the EVE server, which contacts the MMOS API with the security pass, if that pass is still active, the Amazon CloudFront CDN returns a signed URL that leads to that image, the image itself is only accessible for a few seconds, as a security feature, so the client needs to cache the image in case the player needs to access it again.
+
+	The MMOS API authentication uses a HMAC-SHA256 method, based on Amazon authentication methods. The server has an API key and secret, which are changed at regular intervals. The API key and secret are used to generate a signing key, this adds an additional layer of security, since every message is hashed with different values.
+
+\subsection{Architecture}
+
+	%Skrifað í stackless python, notast við UI library CCP, nefna klasana sem tilheyra leiknum, server kóðann
+
+\subsection{Client within a client}
 
 \subsection{The website}
 	One of the goals of the project was to launch a Project Discovery website along with the release of the game. The website serves as an information hub for the project. Interested parties can get information about the game, the science behind the game and our partners, MMOS and the Human Protein Atlas. The website also displays videos related to the game and screenshots of the game in action. To build the website we used HTML5, Less and JavaScript. We were provided with a template from web developers within CCP which helped us make the website look professional and consistent with other EVE Online websites.
