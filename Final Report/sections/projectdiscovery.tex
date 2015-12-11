@@ -5,13 +5,14 @@
 \subsection{Network Communications}
 	The Project Discovery client utilizes a connection with two different parts, the EVE server, and the MMOS RESTful API, which uses the Amazon CloudFront CDN and an Elastic Beanstalk container.
 
-	When a player opens up the client, it automatically contacts the EVE server, which connects to the MMOS API and asks for a new task for the player. The MMOS API then decides the new task and fetches it from the Elastic Beanstalk container, and sends it to the EVE server, which finally sends it to the EVE client. The task object includes a security pass that the client needs to access the URL's for each image that he needs for the task. Each time the client needs an image for that task, it contacts the EVE server, which contacts the MMOS API with the security pass, if that pass is still active, the Amazon CloudFront CDN returns a signed URL that leads to that image, the image itself is only accessible for a few seconds, as a security feature, so the client needs to cache the image in case the player needs to access it again.
+	When a player opens up the client, it automatically contacts the EVE server, which connects to the MMOS API and asks for a new task for the player. The MMOS API then decides the new task and fetches it from the Elastic Beanstalk container, and sends it to the EVE server, which finally sends it to the EVE client. The task object includes a security pass that the client needs to access the URLs for each image that he needs for the task. Each time the client needs an image for that task, it contacts the EVE server, which contacts the MMOS API with the security pass, if that pass is still active, the Amazon CloudFront CDN returns a signed URL that leads to that image, the image itself is only accessible for a few seconds, as a security feature, so the client needs to cache the image in case the player needs to access it again.
 
 	The MMOS API authentication uses a HMAC-SHA256 method, based on Amazon authentication methods. The server has an API key and secret, which are changed at regular intervals. The API key and secret are used to generate a signing key, this adds an additional layer of security, since every message is hashed with different values.
 
 \subsection{Architecture}
 
 	%Skrifað í stackless python, notast við UI library CCP, nefna klasana sem tilheyra leiknum, server kóðann
+
 
 \subsection{Client within a client}
 
