@@ -1,6 +1,6 @@
 \section{Project Discovery}\label{sec:projectdiscovery}
 
-	In this section we discuss the game itself. We explain how it communicates with MMOS' API, the code architecture of the game client and how it fits into the EVE Online client. We also go over how the gameplay works and lastly consider the website we built to go along with the game's launch.
+	In this section we discuss the Project Discovery game in detail. We explain how it communicates with the MMOS' API, we outline the code architecture of the game client and how it fits into the EVE Online client. We also go over how the gameplay works and lastly consider the website we built to go along with the game's launch.
 
 \subsection{Network Communications}
 	The Project Discovery client utilizes a connection with two different parts, the EVE server, and the MMOS RESTful API, which uses the Amazon CloudFront CDN and an Elastic Beanstalk container.
@@ -17,8 +17,6 @@
 	The Project Discovery server is used to contact the EVE database, inserting new players into tables and keeping track of their experience within Project Discovery, and the MMOS server, requesting tasks and their information, submitting classifications, and receiving player statistics. The MMOS server is the server that connects to the MMOS API through a CCP proxy, this server keeps the API keys and secrets, as well as allocating new authentication signatures each time a GET or POST request is made. This separation of the server side is necessary because of security reasons suggested by CCP employees.
 
 	The Project Discovery client side mostly contains code for the User Interface, which utilizes libraries already existing within the EVE Online codebase. The client side also contains all the logic for the tutorial, UI help, category tooltips, rewarding algorithm, animations, category exclusion, audio, scene switching, and the general handling of messages and information coming from the server side.
-
-\subsection{Client within a client}
 
 \subsection{Gameplay}
 	The objective of the game is classify subcellular images correctly. A typical gameplay flow is as follows: The player opens up Project Discovery, an image is loaded and the player studies the image. To help the player do so we implemented a magnification function which allows the player to zoom in on the image by hovering over it with his mouse, this gives the player the full resolution of the image and enables him to examine its details very effectively.
