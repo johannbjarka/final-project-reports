@@ -16,9 +16,50 @@
 \subsection{Client within a client}
 
 \subsection{Gameplay}
+	The objective of the game is classify subcellular images correctly. A typical gameplay flow is as follows: The player opens up Project Discovery, an image is loaded and the player studies the image. To help the player do so we implemented a magnification function which allows the player to zoom in on the image by hovering over it with his mouse, this gives the player the full resolution of the image and enables him to examine its details very effectively.
+
+	\begin{figure}[H]
+	  \centering
+	  \graphicspath{ {./graphics/} }
+	  \centerline{\includegraphics[scale=0.53]{zoom.png}}
+	  \caption{\label{fig:zoom}An image with its original resolution and a zoomed in version.}
+	\end{figure} 
 
 	\subsubsection{Tutorial}
-		When a player opens up Project Discovery for the first time he must start by going through a tutorial phase. The purpose of the tutorial phase is to allow the player to familiarize himself with the controls and the user interface of the game as well as teaching him the basics of analyzing subcellular images. To achieve this we first introduce the player to the controls by using tooltips which explain the functionality of each control element, one at a time, while also allowing the player to interact with the controls. Once the player has gone through the tooltips he gets his first image to analyze, this image is the first stage of seven in the tutorial. Each sta
+		When a player opens up Project Discovery for the first time he must start by going through a tutorial phase. We created the tutorial from scratch with the exception of some tooltip functionality which was already in place, although we refined it. The purpose of the tutorial phase is to allow the player to familiarize himself with the controls and the user interface of the game as well as teaching him the basics of analyzing subcellular images. To achieve this we first introduce the player to the controls by using tooltips which explain the functionality of each control element, one at a time, while also allowing the player to interact with the controls. 
+
+		%Tooltip screenshot
+		\begin{figure}[H]
+		  \centering
+		  \graphicspath{ {./graphics/} }
+		  \centerline{\includegraphics[scale=0.53]{tooltip.png}}
+		  \caption{\label{fig:tooltip}The tooltip which explains the cytoplasm category, making it the only active part of interface.}
+		\end{figure}
+
+		Once the player has gone through the tooltips he gets his first image to analyze, this image is the first stage of seven in the tutorial. Each stage contains one image hand picked by scientists at the Human Protein Atlas and it presents a gradual increase in difficulty from the previous stage. To ease the player into the game and not overwhelm him with all 27 categories, we limit the number of categories available to choose from, to the correct ones plus a few similar but incorrect categories.
+
+		%Limited categories screenshot
+		\begin{figure}[H]
+		  \centering
+		  \graphicspath{ {./graphics/} }
+		  \centerline{\includegraphics[scale=0.53]{limited.png}}
+		  \caption{\label{fig:limited}An example of a tutorial stage where the categories are limited to only three nucleus categories.}
+		\end{figure}
+
+		When the player submits his classification a results screen is displayed. It shows the correct result by overlaying the categories the player picked with either a green correct or red incorrect texture and giving any categories that are correct but the player missed, a green outline texture indicating a missed category. By giving the player instant feedback on their submission we allow the player to learn from any possible mistakes they make. Players do not have to get the correct results for the seven stages of the tutorial to advance, we believed that could be a source of frustration since it would make the tutorial longer. 
+
+		%Results screenshot
+		\begin{figure}[H]
+		  \centering
+		  \graphicspath{ {./graphics/} }
+		  \centerline{\includegraphics[scale=0.53]{result.png}}
+		  \caption{\label{fig:result}The result screen which shows the player getting one category right and one wrong.}
+		\end{figure}
+
+	\subsubsection{Training tasks}
+		After finishing the tutorial the player receives rewards for doing so and is then moved on to the next phase of the game which we refer to as the training phase. This phase, like the tutorial, consists of seven stages but unlike the tutorial players must get the correct result in each stage to advance to the main part of the game. The stages also increase in difficulty and are in general more difficult than the tutorial images. The 
+
+	\subsubsection{Unknown tasks}
 
 \subsection{The website}
 	One of the goals of the project was to launch a Project Discovery website along with the release of the game. The website serves as an information hub for the project. Interested parties can get information about the game, the science behind the game and our partners, MMOS and the Human Protein Atlas. The website also displays videos related to the game and screenshots of the game in action. To build the website we used HTML5, Less and JavaScript. We were provided with a template from web developers within CCP which helped us make the website look professional and consistent with other EVE Online websites.
