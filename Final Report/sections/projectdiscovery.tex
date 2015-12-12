@@ -2,7 +2,7 @@
 	In this section we discuss the Project Discovery game in detail and illuminate how its played. We explain how it communicates with MMOS' API, we outline the code architecture of the game client and how it fits into the EVE Online client. We also go over the website we built to go along with the game's launch.
 
 \subsection{Gameplay}
-	The objective of the game is classify subcellular images correctly by observing the protein patterns of the images (which are stained green) and matching them to relevant categories. A typical gameplay flow is as follows: The player opens up Project Discovery, an image is loaded and the player studies the image. To help the player do so we implemented a magnification function which allows the player to zoom in on the image by hovering over it with his mouse, this gives the player the full resolution of the image and enables him to examine its details very effectively.
+	The objective of the game is classify subcellular images correctly by observing the protein patterns of the images (which are stained green) and matching them to relevant categories. A typical gameplay flow is as follows: The player opens up Project Discovery, an image is loaded and the player studies the image. To help the player do so we implemented a magnification function which allows the player to zoom in on the image by hovering over it with his mouse, this gives the player the full resolution of the image and enables him to examine its details very effectively. This effect can be seen in figure \ref{fig:zoom}.
 
 	\begin{figure}[H]
 	  \centering
@@ -18,9 +18,8 @@
 	Players get rewarded for submitting solutions to images based on their historical accuracy which we call an accuracy rating. The reason being that players would most likely be less motivated to play if the rewards were delayed and most of the time the solution to the task is unknown, so there is no way of knowing if a player's solution is correct or not when he submits it. Even if we sometimes know the correct answer to the task and can therefore reward players based on whether they got it right or not, we choose to always reward players based on their accuracy rating to keep the reward system consistent. Everyone begins with an accuracy rating of 50\% which then increases or decreases based on how well they perform. 
 
 	\subsubsection{Tutorial}
-		When a player opens up Project Discovery for the first time he must start by going through a tutorial phase. We created the tutorial from scratch with the exception of some tooltip functionality which was already in place, although we refined it. The purpose of the tutorial phase is to allow the player to familiarize himself with the controls and the user interface of the game as well as teaching him the basics of analyzing subcellular images. To achieve this we first introduce the player to the controls by using tooltips which explain the functionality of each control element, one at a time, while also allowing the player to interact with the controls. 
+		When a player opens up Project Discovery for the first time he must start by going through a tutorial phase. We created the tutorial from scratch with the exception of some tooltip functionality which was already in place, although we refined it. The purpose of the tutorial phase is to allow the player to familiarize himself with the controls and the user interface of the game as well as teaching him the basics of analyzing subcellular images. To achieve this we first introduce the player to the controls by using tooltips which explain the functionality of each control element, one at a time, while also allowing the player to interact with the controls. A typical tooltip of this kind can be seen in figure \ref{fig:tooltip}.
 
-		%Tooltip screenshot
 		\begin{figure}[H]
 		  \centering
 		  \graphicspath{ {./graphics/} }
@@ -28,9 +27,8 @@
 		  \caption{\label{fig:tooltip}The tooltip which explains the cytoplasm category, making it the only active part of interface.}
 		\end{figure}
 
-		Once the player has gone through the tooltips he gets his first image to analyze, this image is the first stage of seven in the tutorial. Each stage contains one image hand picked by scientists at the Human Protein Atlas and it presents a gradual increase in difficulty from the previous stage. To ease the player into the game and not overwhelm him with all 27 categories, we limit the number of categories available to choose from, to the correct ones plus a few similar but incorrect categories.
+		Once the player has gone through the tooltips he gets his first image to analyze, this image is the first stage of seven in the tutorial. Each stage contains one image hand picked by scientists at the Human Protein Atlas and it presents a gradual increase in difficulty from the previous stage. To ease the player into the game and not overwhelm him with all 27 categories, we limit the number of categories available to choose from, to the correct ones plus a few similar but incorrect categories. An example of this can be seen in figure \ref{fig:limited}.
 
-		%Limited categories screenshot
 		\begin{figure}[H]
 		  \centering
 		  \graphicspath{ {./graphics/} }
@@ -38,9 +36,8 @@
 		  \caption{\label{fig:limited}An example of a tutorial stage where the categories are limited to only three nucleus categories.}
 		\end{figure}
 
-		When the player submits his classification a results screen is displayed. It shows the correct result by overlaying the categories the player picked with either a green correct or red incorrect texture and giving any categories that are correct but the player missed, a green outline texture indicating a missed category. By giving the player instant feedback on their submission we allow the player to learn from any possible mistakes they make. Players do not have to get the correct results for the seven stages of the tutorial to advance, we believed that could be a source of frustration since it would make the tutorial longer. 
+		When the player submits his classification a results screen is displayed. It shows the correct result by overlaying the categories the player picked with either a green correct or red incorrect texture and giving any categories that are correct but the player missed, a green outline texture indicating a missed category. The reward screen can be seen in figure \ref{fig:result}. By giving the player instant feedback on their submission we allow the player to learn from any possible mistakes they make. Players do not have to get the correct results for the seven stages of the tutorial to advance, we believed that could be a source of frustration since it would make the tutorial longer. 
 
-		%Results screenshot
 		\begin{figure}[H]
 		  \centering
 		  \graphicspath{ {./graphics/} }
@@ -51,12 +48,18 @@
 	\subsubsection{Training tasks}
 		After finishing the tutorial the player receives rewards for doing so and is then moved on to the next phase of the game which we refer to as the training phase. This phase, like the tutorial, consists of seven stages containing images that have already been classified by scientists. However, unlike the tutorial, players must get the correct result in each stage to advance to the next phase of the game. The stages also increase in difficulty and are in general more difficult than the tutorial images. Players get the same result screen as in the tutorial so they can continue to learn and better understand how to correctly classify images. 
 
-		The purpose of this phase is to continue to teach players how to classify images and to make sure that only players that have the skills and/or will to solve images correctly can make it to the next phase and thereby contribute to classifying images that haven't already been classified by scientists. Since players get rewards for submitting solutions based on their accuracy rating, they can extract some amount of rewards even if they get everything wrong. We have to make arrangements for players who are only interested in getting rewards with as little effort as possible. With the training phase requiring players to get correct results to be able to move on to classify unknown images, those players would never get to that stage and therefore won't contaminate the results of those images. 
+		The purpose of this phase is to continue to teach players how to classify images and to make sure that only players that have the skills and/or will to solve images correctly can make it to the next phase and thereby contribute to classifying images that haven't already been classified by scientists. Since players get rewards for submitting solutions based on their accuracy rating, they can extract some amount of rewards even if they get everything wrong. We have to make arrangements for players who are only interested in getting rewards with as little effort as possible. With the training phase requiring players to get correct results to be able to move on to classify unknown images, those players would never get to that stage and therefore won't contaminate the results of those images.
 
 	\subsubsection{Unknown tasks}
+		Solving unknown tasks, that is classifying images that haven't already been classified by scientists, is the main component of the game. It is through these tasks that data is generated for scientists to use. The major difference between training tasks and unknown tasks is the result screen, classifying the image itself is done in the same way as with training tasks. Since we don't know the correct classification for unknown tasks we can't give the player a result screen which reveals the correct answer. What we do instead is we show the player a screen we call a community consensus screen, as can be seen in figure % TODO: add reference to image
+		. This screen gives the player feedback on his answer by gathering up answers from other players and displaying which categories have been chosen, and the extent to which they have been chosen, showing popular categories in green and less popular ones in red. This way the player can't be certain of the correct result but it gives him a sense of what it could be. Giving the player feedback to his solution, even though it is not complete, is integral to keeping players interested and engaged with the game.
+
+		When a certain number of players have agreed on a solution of a task, the task is considered solved and is no longer in the rotation of tasks served to players. The tasks that are considered solved are gathered by the API and made available to research scientists.
+
+		% TODO: bæta við screenshoti af community consensus skjá
 
 \subsection{Network Communications}
-	The Project Discovery client utilizes a connection with two different parts, the EVE server, and the MMOS RESTful API, which uses the Amazon CloudFront CDN and an Elastic Beanstalk container.
+	The Project Discovery client utilizes a connection with two different parts, the EVE server, and the MMOS RESTful API, which uses the Amazon CloudFront content delivery network and an Elastic Beanstalk container.
 
 	% Útskýra af hverju þetta er POST en ekki GET
 	When a player opens up the client, it automatically contacts the EVE server through a proxy provided by CCP because of security concerns. The server issues a POST request to the MMOS API through the proxy to ask for a new task for the player. The MMOS API then allocates a task for the specified player and fetches it from the Elastic Beanstalk container, which returns the appropriate task object to the EVE server, which finally sends it to the EVE client. 
