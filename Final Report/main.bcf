@@ -2244,7 +2244,8 @@
     <bcf:citekey order="4">subcellatlas</bcf:citekey>
     <bcf:citekey order="5">mmos</bcf:citekey>
     <bcf:citekey order="6">CCP</bcf:citekey>
-    <bcf:citekey order="7">fanfest</bcf:citekey>
+    <bcf:citekey order="7">mmorpg</bcf:citekey>
+    <bcf:citekey order="8">fanfest</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty" type="entry" sortscheme="nty">
   <bcf:sorting>
