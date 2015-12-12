@@ -65,16 +65,21 @@
 
 	The MMOS API authentication uses a HMAC-SHA256 method, based on Amazon authentication methods. The server has an API key and secret, which are changed at regular intervals. The API key and secret are used to generate a signing key, this adds an additional layer of security, since every message is hashed with different values.
 
-\subsection{Architecture}
+	% citation á sha256
 
-	%Skrifað í stackless python, notast við UI library CCP, nefna klasana sem tilheyra leiknum, server kóðann
+\subsection{Architecture}
 	The Project Discovery architecture follows EVE Online client architecture by example. The language used is Stackless Python, the code is located in a package within the EVE Online client, and contains a server side and a client side. The server side is split into two parts, the MMOS server and the Project Discovery server. 
 
 	The Project Discovery server is used to contact the EVE database, to insert new players into tables and keeping track of their experience within Project Discovery. It also connects to the MMOS server, requesting tasks and their information, submitting classifications, and receiving player statistics. The MMOS server is the server that connects to the MMOS API through a CCP proxy. This server keeps the API keys and secrets, as well as allocating new authentication signatures each time a GET or POST request is made. This separation of the server side is necessary because of security reasons suggested by CCP employees.
 
 	The Project Discovery client side mostly contains code for the user interface, which utilizes libraries already existing within the EVE Online codebase. The client side also contains all the logic for the tutorial, UI help, category tooltips, rewarding algorithm, animations, category exclusion, audio, scene switching, and the general handling of messages and information coming from the server side.
 
-\subsection{The website}
-	One of the goals of the project was to launch a Project Discovery website along with the release of the game. The website serves as an information hub for the project. Interested parties can get information about the game, the science behind the game and our partners, MMOS and the Human Protein Atlas. The website also displays videos related to the game and screenshots of the game in action. To build the website we used HTML5, Less and JavaScript. We were provided with a template from web developers within CCP which helped us make the website look professional and consistent with other EVE Online websites.
+\subsection{Project Discovery Website}
+	We developed a Project Discovery website to go along with the release of the game. The website serves as an information hub for the project. Interested parties can get information about the game, the science behind the game and our partners, MMOS and the Human Protein Atlas. The website also displays videos related to the game and screenshots of the game in action. To build the website we used HTML5, Less and JavaScript. We were provided with a template from web developers within CCP which helped us make the website look professional and consistent with other EVE Online websites. The website boasts a vertical layout and is fully responsive, so it can be viewed on all devices. The top part of the website can be seen in figure \ref{fig:website}.
 
-%Setja inn mynd af vefsíðu?
+	\begin{figure}[H]
+	  \centering
+	  \graphicspath{ {./graphics/} }
+	  \centerline{\includegraphics[scale=0.34]{website.png}}
+	  \caption{\label{fig:website} This is the page that greets visitors to the website.}
+	\end{figure}
