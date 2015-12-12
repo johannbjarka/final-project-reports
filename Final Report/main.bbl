@@ -64,6 +64,15 @@
       \verb https://www.cs.cmu.edu/~biglou/ieee-gwap.pdf
       \endverb
     \endentry
+    \entry{mmorpg}{online}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labeltitlesource}{title}
+      \field{title}{{Massively Multiplayer Online Roleplaying Game: Interacting with people around the world in a virtual reality}}
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Massively_multiplayer_online_role-playing_game
+      \endverb
+    \endentry
     \entry{mmos}{online}{}
       \field{sortinit}{M}
       \field{sortinithash}{2684bec41e9697b92699b46491061da2}
