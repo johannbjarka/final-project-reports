@@ -19,6 +19,25 @@
 
 \refsection{0}
   \sortlist{nty}{nty}
+    \entry{GWAP}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9d1d206ad3280f673703d7831046add6}{Ahn}{A\bibinitperiod}{L.}{L\bibinitperiod}{von}{v\bibinitperiod}{}{}}%
+        {{hash=faa4b9de39512c34497b0345a6aa871b}{Dabbish}{D\bibinitperiod}{L.}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4699541182574dd1ff13618e0b9851b6}
+      \strng{fullhash}{4699541182574dd1ff13618e0b9851b6}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications of the ACM}
+      \field{number}{8}
+      \field{title}{Designing Games With A Purpose}
+      \field{volume}{51}
+      \field{year}{2008}
+      \field{pages}{58\bibrangedash 67}
+      \range{pages}{10}
+    \endentry
     \entry{CCP}{online}{}
       \field{sortinit}{C}
       \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
@@ -53,15 +72,6 @@
       \field{title}{{Galaxy Zoo: How Do Galaxies Form?}}
       \verb{url}
       \verb http://www.galaxyzoo.org/#/story
-      \endverb
-    \endentry
-    \entry{gwap}{online}{}
-      \field{sortinit}{G}
-      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
-      \field{labeltitlesource}{title}
-      \field{title}{{Game with a purpose: Outsourcing steps within a computational process to humans in an entertaining way}}
-      \verb{url}
-      \verb https://www.cs.cmu.edu/~biglou/ieee-gwap.pdf
       \endverb
     \endentry
     \entry{mmorpg}{online}{}
