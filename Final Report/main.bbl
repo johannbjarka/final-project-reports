@@ -1,0 +1,88 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nty}{nty}
+    \entry{CCP}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labeltitlesource}{title}
+      \field{title}{{Crowd Control Productions: We create virtual worlds}}
+      \verb{url}
+      \verb https://www.ccpgames.com/
+      \endverb
+    \endentry
+    \entry{fanfest}{online}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labeltitlesource}{title}
+      \field{title}{{EVE Vegas: Conference made for EVE Online players and fans}}
+      \verb{url}
+      \verb http://vegas.eveonline.com/
+      \endverb
+    \endentry
+    \entry{foldit}{online}{}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labeltitlesource}{title}
+      \field{title}{{FoldIt: Solve Puzzles for Science}}
+      \verb{url}
+      \verb https://fold.it/portal/info/about
+      \endverb
+    \endentry
+    \entry{galaxyzoo}{online}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labeltitlesource}{title}
+      \field{title}{{Galaxy Zoo: How Do Galaxies Form?}}
+      \verb{url}
+      \verb http://www.galaxyzoo.org/#/story
+      \endverb
+    \endentry
+    \entry{gwap}{online}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labeltitlesource}{title}
+      \field{title}{{Game with a purpose: Outsourcing steps within a computational process to humans in an entertaining way}}
+      \verb{url}
+      \verb https://www.cs.cmu.edu/~biglou/ieee-gwap.pdf
+      \endverb
+    \endentry
+    \entry{mmos}{online}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labeltitlesource}{title}
+      \field{title}{{Massively Multiplayer Online Science: A new innovative citizen science platform connecting scientific research and video games}}
+      \verb{url}
+      \verb http://mmos.ch/
+      \endverb
+    \endentry
+    \entry{subcellatlas}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labeltitlesource}{title}
+      \field{title}{{Subcellular atlas - The Human Protein Atlas}}
+      \verb{url}
+      \verb http://www.proteinatlas.org/subcellular
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
