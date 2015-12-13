@@ -2246,6 +2246,9 @@
     <bcf:citekey order="6">CCP</bcf:citekey>
     <bcf:citekey order="7">mmorpg</bcf:citekey>
     <bcf:citekey order="8">fanfest</bcf:citekey>
+    <bcf:citekey order="9">hmac</bcf:citekey>
+    <bcf:citekey order="10">tranquility</bcf:citekey>
+    <bcf:citekey order="11">singularity</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty" type="entry" sortscheme="nty">
   <bcf:sorting>

@@ -65,9 +65,7 @@
 
 	The task object includes a security pass that the client needs to access the URLs for each image that he needs for the task. Each time the client needs an image for that task, it contacts the EVE server, which contacts the MMOS API with the security pass. If that pass is still active, the Amazon CloudFront CDN returns a signed URL that leads to that image. As a security feature, the image itself is only accessible for a few seconds, so the client needs to cache the image in case the player needs to access it again. When a player has submitted his classification for the task, the EVE server issues a POST request to the MMOS API like before, and returns a solution or a community consensus that it uses to grade the player and which we can use to reward them in-game.
 
-	The MMOS API authentication uses a HMAC-SHA256 method, based on Amazon authentication methods. The server has an API key and secret, which are changed at regular intervals. The API key and secret are used to generate a signing key, this adds an additional layer of security, since every message is hashed with different values.
-
-	% citation á sha256
+	The MMOS API authentication uses a HMAC-SHA256 method \cite{hmac}, based on Amazon authentication methods. The server has an API key and secret, which are changed at regular intervals. The API key and secret are used to generate a signing key, this adds an additional layer of security, since every message is hashed with different values.
 
 \subsection{Architecture}
 	The Project Discovery architecture follows EVE Online client architecture by example. The language used is Stackless Python, the code is located in a package within the EVE Online client, and contains a server side and a client side. The server side is split into two parts, the MMOS server and the Project Discovery server. 

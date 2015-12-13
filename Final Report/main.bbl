@@ -51,9 +51,9 @@
       \field{sortinit}{E}
       \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
       \field{labeltitlesource}{title}
-      \field{title}{{EVE Vegas: Conference made for EVE Online players and fans}}
+      \field{title}{{EVE Fanfest}}
       \verb{url}
-      \verb http://vegas.eveonline.com/
+      \verb http://fanfest.eveonline.com/
       \endverb
     \endentry
     \entry{foldit}{online}{}
@@ -73,6 +73,40 @@
       \verb{url}
       \verb http://www.galaxyzoo.org/#/story
       \endverb
+    \endentry
+    \entry{tranquility}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ed91d5179ebe5b6720c7d42efe7eec45}{Khaw}{K\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ed91d5179ebe5b6720c7d42efe7eec45}
+      \strng{fullhash}{ed91d5179ebe5b6720c7d42efe7eec45}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{06}
+      \field{title}{Meet Tranquility, the military-grade monster that powers EVE Online}
+      \field{year}{2013}
+      \verb{url}
+      \verb http://www.pcgamer.com/eve-online-1/
+      \endverb
+    \endentry
+    \entry{hmac}{report}{}
+      \name{author}{3}{}{%
+        {{hash=1616e1ae9b17186973655dbbf3eae695}{Krawczyk}{K\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=ccd3082ff955fbb292085efb2d1eda6e}{Bellare}{B\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=3f0ad1b7a56041b704792073f2e23a5c}{Canetti}{C\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{97f942f3357f68b1338b14f9bc79670e}
+      \strng{fullhash}{97f942f3357f68b1338b14f9bc79670e}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{02}
+      \field{note}{RFC 2104}
+      \field{title}{HMAC: Keyed-Hashing for Message Authentication}
+      \field{year}{1997}
     \endentry
     \entry{mmorpg}{online}{}
       \field{sortinit}{M}
@@ -99,6 +133,15 @@
       \field{title}{{Subcellular atlas - The Human Protein Atlas}}
       \verb{url}
       \verb http://www.proteinatlas.org/subcellular
+      \endverb
+    \endentry
+    \entry{singularity}{online}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labeltitlesource}{title}
+      \field{title}{Test server Singularity}
+      \verb{url}
+      \verb https://support.eveonline.com/hc/en-us/articles/202331461-Test-Server-Singularity-
       \endverb
     \endentry
   \endsortlist
