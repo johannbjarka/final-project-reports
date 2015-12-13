@@ -1,0 +1,158 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nty}{nty}
+    \entry{GWAP}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9d1d206ad3280f673703d7831046add6}{Ahn}{A\bibinitperiod}{L.}{L\bibinitperiod}{von}{v\bibinitperiod}{}{}}%
+        {{hash=faa4b9de39512c34497b0345a6aa871b}{Dabbish}{D\bibinitperiod}{L.}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4699541182574dd1ff13618e0b9851b6}
+      \strng{fullhash}{4699541182574dd1ff13618e0b9851b6}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications of the ACM}
+      \field{number}{8}
+      \field{title}{Designing Games With A Purpose}
+      \field{volume}{51}
+      \field{year}{2008}
+      \field{pages}{58\bibrangedash 67}
+      \range{pages}{10}
+    \endentry
+    \entry{CCP}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labeltitlesource}{title}
+      \field{title}{{Crowd Control Productions: We create virtual worlds}}
+      \verb{url}
+      \verb https://www.ccpgames.com/
+      \endverb
+    \endentry
+    \entry{fanfest}{online}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labeltitlesource}{title}
+      \field{title}{{EVE Fanfest}}
+      \verb{url}
+      \verb http://fanfest.eveonline.com/
+      \endverb
+    \endentry
+    \entry{foldit}{online}{}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labeltitlesource}{title}
+      \field{title}{{FoldIt: Solve Puzzles for Science}}
+      \verb{url}
+      \verb https://fold.it/portal/info/about
+      \endverb
+    \endentry
+    \entry{galaxyzoo}{online}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labeltitlesource}{title}
+      \field{title}{{Galaxy Zoo: How Do Galaxies Form?}}
+      \verb{url}
+      \verb http://www.galaxyzoo.org/#/story
+      \endverb
+    \endentry
+    \entry{tranquility}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ed91d5179ebe5b6720c7d42efe7eec45}{Khaw}{K\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ed91d5179ebe5b6720c7d42efe7eec45}
+      \strng{fullhash}{ed91d5179ebe5b6720c7d42efe7eec45}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{06}
+      \field{title}{Meet Tranquility, the military-grade monster that powers EVE Online}
+      \field{year}{2013}
+      \verb{url}
+      \verb http://www.pcgamer.com/eve-online-1/
+      \endverb
+    \endentry
+    \entry{hmac}{report}{}
+      \name{author}{3}{}{%
+        {{hash=1616e1ae9b17186973655dbbf3eae695}{Krawczyk}{K\bibinitperiod}{H.}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=ccd3082ff955fbb292085efb2d1eda6e}{Bellare}{B\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=3f0ad1b7a56041b704792073f2e23a5c}{Canetti}{C\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{97f942f3357f68b1338b14f9bc79670e}
+      \strng{fullhash}{97f942f3357f68b1338b14f9bc79670e}
+      \field{sortinit}{K}
+      \field{sortinithash}{a7d5b3aec5a0890aae7baf85a209abfc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{02}
+      \field{note}{RFC 2104}
+      \field{title}{HMAC: Keyed-Hashing for Message Authentication}
+      \field{year}{1997}
+    \endentry
+    \entry{mmos}{online}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labeltitlesource}{title}
+      \field{title}{{Massively Multiplayer Online Science: A new innovative citizen science platform connecting scientific research and video games}}
+      \verb{url}
+      \verb http://mmos.ch/
+      \endverb
+    \endentry
+    \entry{twitch}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8ed854df4235a5740d26df7d2513d03b}{Richards}{R\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8ed854df4235a5740d26df7d2513d03b}
+      \strng{fullhash}{8ed854df4235a5740d26df7d2513d03b}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{Teach the world to twitch}
+      \field{year}{2003}
+      \verb{url}
+      \verb http://archive.futurelab.org.uk/resources/publications-reports-articles/web-articles/Web-Article578
+      \endverb
+    \endentry
+    \entry{subcellatlas}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labeltitlesource}{title}
+      \field{title}{{Subcellular atlas - The Human Protein Atlas}}
+      \verb{url}
+      \verb http://www.proteinatlas.org/subcellular
+      \endverb
+    \endentry
+    \entry{singularity}{online}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labeltitlesource}{title}
+      \field{title}{Test server Singularity}
+      \verb{url}
+      \verb https://support.eveonline.com/hc/en-us/articles/202331461-Test-Server-Singularity-
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
