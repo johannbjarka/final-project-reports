@@ -58,6 +58,8 @@ Stuff left:
 
 Add to abstract (mention CADIA)
 
+Add cover letter
+
 Add toggl image and some text to go with it
 
 Add text burndown chart
