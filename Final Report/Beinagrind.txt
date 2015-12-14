@@ -56,7 +56,7 @@ Cover letter frá Pétri og Attila
 
 Stuff left:
 
-Add to abstract (mention CADIA)
+x Add to abstract (mention CADIA)
 
 x Add GWAP to introduction
 
@@ -66,7 +66,7 @@ x Add toggl image and some text to go with it
 
 x Add text to burndown chart
 
-Add boasting 
+x Add boasting 
 
 Skýrslur:
 
