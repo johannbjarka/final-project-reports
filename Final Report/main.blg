@@ -1,17 +1,17 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
 [0] Config.pm:327> INFO - Logfile is 'main.blg'
-[69] biber-MSWIN:273> INFO - === %a %b %e, %Y, %H:%M:%S
-[69] Biber.pm:333> INFO - Reading 'main.bcf'
-[357] Utils.pm:146> WARN - Warning: Found biblatex control file version 2.8, expected version 2.7
-[358] Biber.pm:645> INFO - Found 11 citekeys in bib section 0
-[386] Biber.pm:2977> INFO - Processing section 0
-[412] Biber.pm:3115> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[436] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[450] bibtex.pm:895> INFO - Found BibTeX data source 'bibliography.bib'
-[626] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[626] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[627] Biber.pm:2854> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'en-US'
-[627] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
-[657] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[687] bbl.pm:596> INFO - Output to main.bbl
-[690] Biber.pm:106> INFO - WARNINGS: 1
+[70] biber-MSWIN:273> INFO - === %a %b %e, %Y, %H:%M:%S
+[71] Biber.pm:333> INFO - Reading 'main.bcf'
+[365] Utils.pm:146> WARN - Warning: Found biblatex control file version 2.8, expected version 2.7
+[366] Biber.pm:645> INFO - Found 17 citekeys in bib section 0
+[395] Biber.pm:2977> INFO - Processing section 0
+[421] Biber.pm:3115> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[453] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[472] bibtex.pm:895> INFO - Found BibTeX data source 'bibliography.bib'
+[749] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[750] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[750] Biber.pm:2854> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'en-US'
+[750] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
+[796] bbl.pm:505> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[841] bbl.pm:596> INFO - Output to main.bbl
+[845] Biber.pm:106> INFO - WARNINGS: 1

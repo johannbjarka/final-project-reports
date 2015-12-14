@@ -47,6 +47,18 @@
       \verb https://www.ccpgames.com/
       \endverb
     \endentry
+    \entry{rumag}{article}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Tímarit Háskólans í Reykjavík}
+      \field{title}{David Thue}
+      \field{volume}{7}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.ru.is/media/hr/skjol/HR_Timarit_2015_Web.pdf
+      \endverb
+    \endentry
     \entry{fanfest}{online}{}
       \field{sortinit}{E}
       \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
@@ -54,6 +66,15 @@
       \field{title}{{EVE Fanfest}}
       \verb{url}
       \verb http://fanfest.eveonline.com/
+      \endverb
+    \endentry
+    \entry{vegas}{online}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labeltitlesource}{title}
+      \field{title}{{EVE Vegas}}
+      \verb{url}
+      \verb http://vegas.eveonline.com/
       \endverb
     \endentry
     \entry{foldit}{online}{}
@@ -108,6 +129,24 @@
       \field{title}{HMAC: Keyed-Hashing for Message Authentication}
       \field{year}{1997}
     \endentry
+    \entry{nature}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e391f3edba989a3c3a082325ec9f6e7e}{Marx}{M\bibinitperiod}{V.}{V\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e391f3edba989a3c3a082325ec9f6e7e}
+      \strng{fullhash}{e391f3edba989a3c3a082325ec9f6e7e}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature magazine}
+      \field{month}{09}
+      \field{number}{9}
+      \field{title}{Mapping proteins with spatial proteomics}
+      \field{year}{2015}
+      \field{pages}{815\bibrangedash 819}
+      \range{pages}{5}
+    \endentry
     \entry{mmos}{online}{}
       \field{sortinit}{M}
       \field{sortinithash}{2684bec41e9697b92699b46491061da2}
@@ -115,6 +154,32 @@
       \field{title}{{Massively Multiplayer Online Science: A new innovative citizen science platform connecting scientific research and video games}}
       \verb{url}
       \verb http://mmos.ch/
+      \endverb
+    \endentry
+    \entry{discovery}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5b65a4de796d1a2ff441b65beb7ddb40}{O'Neill}{O\bibinitperiod}{I.}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5b65a4de796d1a2ff441b65beb7ddb40}
+      \strng{fullhash}{5b65a4de796d1a2ff441b65beb7ddb40}
+      \field{sortinit}{O}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{Virtual Universe to Install 'Gamer Science' Project}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://news.discovery.com/space/virtual-universe-to-install-gamer-science-biology-project-151026.htm
+      \endverb
+    \endentry
+    \entry{ruis}{online}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labeltitlesource}{title}
+      \field{title}{Project Discovery: A new virtual frontier}
+      \verb{url}
+      \verb http://en.ru.is/news/project-discovery-a-new-virtual-frontier
       \endverb
     \endentry
     \entry{twitch}{online}{}
@@ -132,6 +197,15 @@
       \field{year}{2003}
       \verb{url}
       \verb http://archive.futurelab.org.uk/resources/publications-reports-articles/web-articles/Web-Article578
+      \endverb
+    \endentry
+    \entry{citizenscience}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labeltitlesource}{title}
+      \field{title}{SciStarter: Citizen Science}
+      \verb{url}
+      \verb http://scistarter.com/page/Citizen%20Science.html
       \endverb
     \endentry
     \entry{subcellatlas}{online}{}

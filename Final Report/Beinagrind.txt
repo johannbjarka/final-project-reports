@@ -58,11 +58,13 @@ Stuff left:
 
 Add to abstract (mention CADIA)
 
-Add cover letter
+x Add GWAP to introduction
 
-Add toggl image and some text to go with it
+x Add cover letter
 
-Add text burndown chart
+x Add toggl image and some text to go with it
+
+x Add text to burndown chart
 
 Add boasting 
 
