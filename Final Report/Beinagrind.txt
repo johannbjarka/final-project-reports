@@ -54,11 +54,15 @@ Beinagrind
 
 Cover letter frá Pétri og Attila
 
-Risk analysis?
+Stuff left:
 
-Reasons plan didn't work:
+Add to abstract (mention CADIA)
 
-We didn't have time during exams to work on the project, ahouldn't have scheduled a sprint during that time.
-A lot of stories got added to the project along the way, for example because of user tests and responding to them
-A lot of the programming was more complex than we figured 
+Add toggl image and some text to go with it
+
+Add text burndown chart
+
+Add boasting 
+
+
 
