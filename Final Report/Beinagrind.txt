@@ -64,5 +64,42 @@ Add text burndown chart
 
 Add boasting 
 
+Skýrslur:
 
+1. Lokaskýrsla
+2. Progress report
+	2.1 introduction
+	2.2 lýsing á ferli
+	2.3 áhættugreining
+	2.4 sprints
+	2.5 discussion
+	2.6 conclusion
+3.Developer guide
 
+Lokaskýrsla punktar:
+
+Taka fram í inngangnum að verið sé að byggja ofan á vinnu annarra, og hvaða purpose er með okkar verkefni.
+
+Bæta við í abstract að þetta er Bsc lokaverkefni 
+
+Ártöl alls staðar
+
+Vitna í allar myndir í textanum
+
+Töflurnar allar ljótar, hafa textann vinstri miðaðann
+
+Caption á allar töflur
+
+Vitna í allar töflur í textanum
+
+Heildarfjöldi sagna í lokin, ekki tala um hvað fór inn og út
+
+Hafa í textanum hversu mikið capacity (team capacity)
+
+Brennsluhraðinn var svona, capacity var svona
+
+Spurningar sem koma alltaf:
+
+Hvað var erfiðast í þessu verkefni?
+
+Hvað myndirðu gera öðruvísi ef þú værir að byrja á því núna?
